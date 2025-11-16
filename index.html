@@ -1,203 +1,74 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hajer Bakoor — Portfolio</title>
-  <meta name="description" content="Portfolio of Hajer Bakoor — Electrical & Computer Engineering student focused on embedded systems and AI." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      /* palette */
-      --bg:#800000;                       /* burgundy page background */
-      --panel:#f2d1d1;                    /* light burgundy panel */
-      --muted:#3a4760;                    /* muted text (darkened for contrast) */
-      --text:#ffffff;                     /* primary text */
-      --brand:#800000;                    /* primary burgundy */
-      --accent:#b30000;                   /* accent button text */
-      --heading:#990000;                  /* heading burgundy */
-      --max:1100px;
-      --ring:0 0 0 3px rgba(10, 42, 70, .18);
-      --border:1px solid rgba(0, 0, 0, .18);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
-    a{color:var(--brand);text-decoration:none}
-    img{max-width:100%;display:block}
+<section id="courses" class="section">
+  <h2>University Courses & Course Projects</h2>
+  <div class="grid">
+    <!-- C++ Programming -->
+    <div class="col-6 card border-left">
+      <h3>C++ Programming - Wind Speed Prediction</h3>
+      <p class="muted">Developed a C++ program to predict wind speed using various mathematical models (linear, polynomial, logarithmic, exponential).</p>
+      <ul class="muted">
+        <li><strong>Skills:</strong> Data analysis, error metrics (MSE, RMSE, R²), C++ programming.</li>
+        <li><strong>Project Report:</strong> <a href="path_to_your_project_report" target="_blank">View Report</a></li>
+      </ul>
+    </div>
 
-    /* Header */
-    .site-header{position:sticky;top:0;background:rgba(128,0,0,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08);z-index:20}
-    .nav{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 18px}
-    .brand{font-weight:800;letter-spacing:.2px;color:#ffffff}
-    .nav-links a{margin-left:18px;color:#ffffff;opacity:.9}
+    <!-- Python Programming -->
+    <div class="col-6 card border-left">
+      <h3>Python Programming - Library Module</h3>
+      <p class="muted">Developed a Python library for string and list manipulation, implementing several functions such as to_lower, to_upper, find_chr, and replace_str.</p>
+      <ul class="muted">
+        <li><strong>Skills:</strong> Python, data abstraction, string manipulation, algorithm development.</li>
+        <li><strong>Project Report:</strong> <a href="path_to_your_project_report" target="_blank">View Report</a></li>
+      </ul>
+    </div>
 
-    /* Buttons */
-    .btn{display:inline-block;padding:10px 14px;border-radius:12px;background:var(--brand);color:#fff;font-weight:600;border:var(--border)}
-    .btn:focus{outline:none;box-shadow:var(--ring)}
+    <!-- MATLAB/Simulink -->
+    <div class="col-6 card border-left">
+      <h3>MATLAB/Simulink - Digital Shooting Game</h3>
+      <p class="muted">Designed a digital shooting game circuit using 7-segment displays with MATLAB for the circuit simulation and logic design.</p>
+      <ul class="muted">
+        <li><strong>Skills:</strong> Circuit design, 7-segment display logic, MATLAB simulation.</li>
+        <li><strong>Project Report:</strong> <a href="path_to_your_project_report" target="_blank">View Report</a></li>
+      </ul>
+    </div>
 
-    /* Layout Helpers */
-    .section{max-width:var(--max);margin:22px auto;padding:36px 18px}
-    .section h2{font-size:28px;margin:0 0 18px;color:white;} /* Text color for headings changed to white */
-    h3{color:var(--heading);margin:4px 0 8px;}  /* Text color for headings kept as burgundy */
-    p{margin:0 0 10px}
-    ul{margin:8px 0 0 18px}
-    li{margin:6px 0}
+    <!-- Microprocessor Systems -->
+    <div class="col-6 card border-left">
+      <h3>Microprocessor Systems - SNAR20 RC Arduino Tank Robot Arm</h3>
+      <p class="muted">Designed and built an Arduino-based robotic arm with tank movement and remote control functionality for automation applications.</p>
+      <ul class="muted">
+        <li><strong>Skills:</strong> Arduino, robotic arm control, motor drivers, sensor integration.</li>
+        <li><strong>Project Report:</strong> <a href="path_to_your_project_report" target="_blank">View Report</a></li>
+      </ul>
+    </div>
 
-    .grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
-    .col-12{grid-column:span 12}
-    .col-8{grid-column:span 8}
-    .col-6{grid-column:span 6}
-    .col-4{grid-column:span 4}
+    <!-- Logic Design -->
+    <div class="col-6 card border-left">
+      <h3>Logic Design - FSM-Based VVI Pacemaker Controller</h3>
+      <p class="muted">Designed a finite-state machine (FSM)-based VVI pacemaker controller in VHDL to simulate the behavior of a real-world pacemaker system using FPGA.</p>
+      <ul class="muted">
+        <li><strong>Skills:</strong> VHDL, FSM design, FPGA implementation, pacemaker logic.</li>
+        <li><strong>Project Report:</strong> <a href="path_to_your_project_report" target="_blank">View Report</a></li>
+      </ul>
+    </div>
 
-    /* Panels & Cards */
-    .panel{background:var(--panel);border:var(--border);border-radius:16px;padding:18px}
-    .card{background:var(--panel);border:var(--border);border-radius:16px;padding:18px}
-    .card.border-left{border-left:6px solid #990000}
+    <!-- Computer Architecture -->
+    <div class="col-6 card border-left">
+      <h3>Computer Architecture - Digital Logic for Pacemaker</h3>
+      <p class="muted">Worked on the design and implementation of the control logic for a pacemaker using digital logic components such as flip-flops and counters.</p>
+      <ul class="muted">
+        <li><strong>Skills:</strong> Digital logic, FPGA, state machines, embedded systems.</li>
+        <li><strong>Project Report:</strong> <a href="path_to_your_project_report" target="_blank">View Report</a></li>
+      </ul>
+    </div>
 
-    .muted{color:var(--muted)}
-
-    /* HERO — now uses the same panel design as sections below */
-    .hero{max-width:var(--max);margin:40px auto;padding:24px 18px}
-    .hero .panel{padding:28px}
-    .hero-grid{display:grid;grid-template-columns:140px 1fr;gap:18px;align-items:center}
-    .hero h1{font-size:clamp(28px,3.4vw,46px);line-height:1.15;margin:0;color:var(--brand)}
-    .hero p{color:#10142d;margin:6px 0 16px;font-weight:500}
-    .hero-img{width:140px;height:140px;object-fit:cover;border-radius:16px;border:4px solid #000000;box-shadow:0 0 15px rgba(84,113,84,.2)}
-
-    /* About chips */
-    .kudos{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .kudos span{background:#e9edf2;border-radius:999px;padding:6px 10px;font-size:13px;color:#0b1b2a;border:1px solid rgba(0,0,0,.08)}
-
-    /* Footer */
-    .site-footer{color:#e9f3e5;padding:20px 12px;border-top:1px solid rgba(255,255,255,.06);text-align:center}
-
-    @media(max-width:960px){
-      .col-8,.col-6,.col-4{grid-column:span 12}
-      .nav-links{display:none}
-      .hero-grid{grid-template-columns:1fr;justify-items:center;text-align:center}
-      .hero h1{margin-top:6px}
-    }
-  </style>
-</head>
-<body>
-  <header class="site-header">
-    <nav class="nav">
-      <a class="brand" href="#top">Hajer Bakoor</a>
-      <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#courses">Courses</a>
-        <a href="#labs">Labs</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="panel">
-        <div class="hero-grid">
-          <img class="hero-img" src="https://github.com/Hajer-bk/hajer-bakoor-portfolio/blob/main/WhatsApp%20Image%202025-11-16%20at%2017.56.11_3aa32806.jpg?raw=true" alt="Portrait of Hajer Bakoor" loading="lazy" />
-          <div>
-            <h1>Hajer Bakoor</h1>
-            <p class="muted">Electrical & Computer Engineering student with a passion for embedded systems and AI, transforming ideas into working prototypes.</p>
-            <a class="btn" href="#projects">View My Portfolio</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-      <h2>About Me</h2>
-      <div class="panel">
-        <p class="lead" style="color:#800000;">I’m Hajer — an ECE student in Jeddah who loves building dependable hardware-software systems. I work at the point where microcontrollers, sensors, and control algorithms meet data and signal processing to turn ideas into working prototypes.</p>
-        <hr class="rule" />
-        <p class="body" style="color:#800000;">My focus areas are embedded firmware, motion/control for small robots, and applied AI for real-world solutions. I care about clean schematics, readable code, and measured results.</p>
-        <div class="kudos">
-          <span>Embedded C/C++</span>
-          <span>Arduino & Raspberry Pi</span>
-          <span>MATLAB/Simulink</span>
-          <span>AI/ML</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- University Courses & Course Projects Section -->
-    <section id="courses" class="section">
-      <h2>University Courses & Course Projects</h2>
-      <div class="grid">
-        <div class="col-6 card border-left">
-          <h3>C++ Programming</h3>
-          <p class="muted">I have developed skills in C++ programming, including handling I/O, functions, arrays, vectors, pointers, and basic object-oriented programming (OOP) concepts.</p>
-          <ul class="muted">
-            <li><strong>Mini-Project:</strong> PV I-V curve simulator.</li>
-          </ul>
-        </div>
-        <div class="col-6 card border-left">
-          <h3>Python Programming</h3>
-          <p class="muted">I have worked with Python for algorithmic thinking, data structures, and coding practices. Applied it in automation and data analysis projects.</p>
-          <ul class="muted">
-            <li><strong>Project:</strong> Sensor-driven control simulation with logging.</li>
-          </ul>
-        </div>
-        <div class="col-6 card border-left">
-          <h3>MATLAB/Simulink</h3>
-          <p class="muted">I have used MATLAB and Simulink for modeling, analysis, and simulation of embedded systems and control systems.</p>
-          <ul class="muted">
-            <li><strong>Mini-Project:</strong> Simulated PV I-V and P-V curves and MPPT analysis.</li>
-          </ul>
-        </div>
-        <div class="col-6 card border-left">
-          <h3>AI & Machine Learning</h3>
-          <p class="muted">Studied the basics of AI and ML, including algorithms like decision trees, random forests, and classification models.</p>
-          <ul class="muted">
-            <li><strong>Project:</strong> Voice-based disease detection using DSP + ML pipeline.</li>
-          </ul>
-        </div>
-        <div class="col-6 card border-left">
-          <h3>Computer Architecture & Organization</h3>
-          <p class="muted">I learned about data path/control, memory hierarchy, ISAs, and pipelining in computer architecture and organization.</p>
-          <ul class="muted">
-            <li><strong>Study:</strong> FPGA vs ASIC trade-offs for satellite subsystems.</li>
-          </ul>
-        </div>
-        <div class="col-6 card border-left">
-          <h3>Digital Logic Design</h3>
-          <p class="muted">Worked with combinational and sequential logic, K-maps, FSMs, and FPGA basics for logic design.</p>
-          <ul class="muted">
-            <li><strong>Build:</strong> LED sequencer with counters/FSM on PL.</li>
-          </ul>
-        </div>
-        <div class="col-6 card border-left">
-          <h3>Microprocessor Systems & Circuits</h3>
-          <p class="muted">Studied MCU programming, sensor interfacing, and analog circuits.</p>
-          <ul class="muted">
-            <li><strong>Build:</strong> DIY robotic arm for pick-and-place tasks.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <div class="panel">
-        <p>Email: <a href="mailto:hajwe@example.com">bakooresaa@gmail.com</a></p> 
-        <p class="muted">Phone: +966 548476758</p> 
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© <span id="y"></span> Hajer Bakoor — Portfolio</p>
-  </footer>
-
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body>
-</html>
+    <!-- Digital Logic Design - Digital Shooting Game -->
+    <div class="col-6 card border-left">
+      <h3>Digital Logic Design - Digital Shooting Game</h3>
+      <p class="muted">Designed a digital shooting game using a 7-segment display and various ICs like CD4033, CD4093, and CD4017. The player must shoot a number that appears on the 7-segment display before it vanishes.</p>
+      <ul class="muted">
+        <li><strong>Skills:</strong> Digital circuit design, FSM design, component integration, troubleshooting.</li>
+        <li><strong>Project Report:</strong> <a href="path_to_your_project_report" target="_blank">View Report</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
